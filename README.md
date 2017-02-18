@@ -20,7 +20,7 @@
     #
     # THE -dport NUMBER IS THE SAME ONE YOU SET UP IN THE SSHD_CONFIG FILE
     #
-    -A INPUT -p tcp -m state --state NEW --dport XXXX -j ACCEPT
+    -A INPUT -p tcp -m state --state NEW --dport "porta" -j ACCEPT
      
     # Allow ping
     -A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT
